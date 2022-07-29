@@ -7,8 +7,8 @@ class App {
         document.body.appendChild(container);
 
         // CAMERA
-        //this.camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
-        //this.camera.position.set(0, 0, 4);
+        this.camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+        this.camera.position.set(0, 0, 4);
 
         // SCENE
         this.scene = new THREE.Scene();
