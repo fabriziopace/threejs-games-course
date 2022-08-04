@@ -1,3 +1,5 @@
+
+import { OrbitControls } from '../../../libs/three/OrbitControls.js';
 var APP = {
 
 	Player: function () {
@@ -15,6 +17,8 @@ var APP = {
 
 		var dom = document.createElement( 'div' );
 		dom.appendChild( renderer.domElement );
+
+		
 
 		this.dom = dom;
 
@@ -98,6 +102,8 @@ var APP = {
 			}
 
 			dispatch( events.init, arguments );
+			
+			const controls = new OrbitControls(camera, renderer.domElement);
 
 		};
 
