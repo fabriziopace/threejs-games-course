@@ -83,7 +83,7 @@ class App {
     }
 
     render() {
-        this.plane.rotateY(0.01);
+        //this.plane.rotateY(0.01);
         this.renderer.render(this.scene, this.camera);
     }
 }
