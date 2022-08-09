@@ -59,7 +59,7 @@ class App {
     loadGLTF() {
         const loader = new GLTFLoader().setPath('../../assets/plane/');
 
-        loader.load('test.glb',
+        loader.load('newplane.glb',
             gltf => {
                 this.scene.add(gltf.scene);
                 const bbox = new THREE.Box3().setFromObject(gltf.scene);
