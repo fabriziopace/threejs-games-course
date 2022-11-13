@@ -190,14 +190,14 @@ class Game {
     }
 
     render() {
-        /*if (this.loading) {
+        if (this.loading) {
             if (this.plane.ready && this.obstacles.ready) {
                 this.loading = false;
                 this.loadingBar.visible = false;
             } else {
                 return;
             }
-        }*/
+        }
 
         const time = this.clock.getElapsedTime();
 
